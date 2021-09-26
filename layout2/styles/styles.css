@@ -1,100 +1,72 @@
 body {
     width:960px;
-    margin: 0;
-    margin-left:20px;
+    margin: 20px auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    line-height: 2em;
+    background: #FFFFFF;
+    font-size: 0.8em;
 }
 
-ul:first-of-type, ul li ul {
+div, footer, ul {
+    background-color: silver; 
+}
+
+header ul {
     list-style-type: none;
-    padding-left: 0;
 }
 
-ul li ul {
-    margin-left: 20px;
+/* GRID */
+header, section, main, footer {
+    margin-bottom: 10px;
+    display: grid;
 }
 
-ul:first-of-type li a, ul:first-of-type li a:link, a {
-    color:#CC1C0D;
+header {
+    grid-template: 60px/180px 1fr;
+    grid-gap: 20px;
 }
 
-ul:first-of-type li a:visited {
-    color: rgb(34, 148, 224);
+header ul {
+    height: 40px;
+    align-self: center;
+    justify-self: end;
+    align-items: center;
 }
 
-ul:first-of-type li a:hover, ul:first-of-type li a:focus {
-    color: rgb(36, 209, 88);
+header ul li {
+    display: inline-block;
+    width: 80px;
 }
 
-h2 {
-    color: #CC1C0D;
-    border: 1px solid #929CA4;
-    background-color: #DFE3E6;
-    border-radius: 4px;
-    padding:4px 8px;
+header ul li a {
+    margin: 12px;
+    display: inline-block;
+    text-decoration: none;
 }
 
-p img {
-    vertical-align: text-top;
-    float: left;
-    margin: 5px 10px 0 0;
+section {
+    grid-template: 80px/1fr;
+    align-items: center;
 }
 
-/*About Us Page*/
 section p {
-    margin-top: 0;
-}
-
-p ~ section img {
-    border-radius: 40px;
-    border: 2px solid #CC1C0D;
-    float: left;
-    margin-right: 15px;
-    vertical-align: baseline;
-}
-
-/*Pricing Page*/
-section.pricing div {
-    float: left;
-    border: 1px solid #929CA4;
-    border-radius: 8px;
-    padding: 30px 0;
-    margin-right: 5px;
-    text-align: center;
-}
-
-section.pricing div img {
-    text-align: center;
-}
-
-section.pricing div h3 {
-    clear: both;
-}
-
-section.pricing div:nth-child(1) h3 {
-    border-top: 8px solid #CC1C0D;
-}
-
-section.pricing div:nth-child(2) h3 {
-    border-top: 8px solid #37A4A4;
-}
-
-section.pricing div:nth-child(3) h3 {
-    border-top: 8px solid #685288;
-}
-
-section.pricing div:nth-child(4) h3 {
-    border-top: 8px solid #000000;
-    margin-top: 33px;
-}
-
-section.pricing div p {
-    padding: 10px 45px;
-}
-
-/*Solution Page*/
-#vprospect, #vconvert, #vretain {
+    padding: 0;
+    margin: 0;
     font-weight: bold;
+}
+
+section p:first-of-type {
+    font-size: 1.5em;
+}
+
+main {
+    margin-top: 20px;
+    grid-template: 150px 150px 150px/316px 316px 316px;
+    grid-gap:6px;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+
+footer {
+    justify-items: center;
 }

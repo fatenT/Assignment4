@@ -19,14 +19,6 @@ header, section, main, footer {
     margin-bottom: 10px;
     display: grid;
     grid-gap: 20px;
-    /*grid-template-columns: 220px 1fr 1fr;
-    grid-template-rows: 105px auto auto 50px;
-    align-content: center;
-    grid-template-areas: 
-        "logo navi navi"
-        "head head head"
-        "cont cont side"
-        "foot foot foot";*/
 }
 
 header {
@@ -44,11 +36,10 @@ header ul {
 header ul li {
     display: inline-block;
     width: 80px;
-    justify-items: baseline;
 }
 
 header ul li a {
-    margin: 8px 0;
+    margin: 12px;
     display: inline-block;
     text-decoration: none;
 }
