@@ -41,6 +41,7 @@ header ul li a {
     margin: 12px;
     display: inline-block;
     text-decoration: none;
+    color: #000000;
 }
 
 section {
